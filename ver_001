@@ -1,0 +1,107 @@
+import random
+import tkinter
+
+
+def password_lenght_6():
+    textfield.delete(1, 1000)
+    password = []
+
+    for i in range(0, 5):
+        x = random.choice('!@#%&*AaBbCcDdEeFfGgHhIiJjKkLlMmNnOo!@#%&*PpQqRrSsTtUuWwVvXxYyZz1234567890!@#%&*')
+        password.append(x)
+
+    password.reverse()
+    textfield.insert(0, str(password)
+                     .replace(' ', '')
+                     .replace(',', '')
+                     .replace("'", "")
+                     .replace("]", "")
+                     .replace("[", ""))
+
+
+def password_lenght_8():
+    textfield.delete(1, 1000)
+    password = []
+
+    for i in range(0, 7):
+        x = random.choice('!@#%&*AaBbCcDdEeFfGgHhIiJjKkLlMmNnOo!@#%&*PpQqRrSsTtUuWwVvXxYyZz1234567890!@#%&*')
+        password.append(x)
+
+    password.reverse()
+    textfield.insert(0, str(password)
+                     .replace(' ', '')
+                     .replace(',', '')
+                     .replace("'", "")
+                     .replace("]", "")
+                     .replace("[", ""))
+
+
+def password_lenght_12():
+    textfield.delete(1, 1000)
+    password = []
+
+    for i in range(0, 11):
+        x = random.choice('!@#%&*AaBbCcDdEeFfGgHhIiJjKkLlMmNnOo!@#%&*PpQqRrSsTtUuWwVvXxYyZz1234567890!@#%&*')
+        password.append(x)
+
+    password.reverse()
+    textfield.insert(0, str(password)
+                     .replace(' ', '')
+                     .replace(',', '')
+                     .replace("'", "")
+                     .replace("]", "")
+                     .replace("[", ""))
+
+
+def password_lenght_18():
+    textfield.delete(1, 1000)
+    password = []
+
+    for i in range(0, 17):
+        x = random.choice('!@#%&*AaBbCcDdEeFfGgHhIiJjKkLlMmNnOo!@#%&*PpQqRrSsTtUuWwVvXxYyZz1234567890!@#%&*')
+        password.append(x)
+
+    password.reverse()
+    textfield.insert(0, str(password)
+                     .replace(' ', '')
+                     .replace(',', '')
+                     .replace("'", "")
+                     .replace("]", "")
+                     .replace("[", ""))
+
+
+def password_lenght_24():
+    textfield.delete(1, 1000)
+    password = []
+
+    for i in range(0, 23):
+        x = random.choice('!@#%&*AaBbCcDdEeFfGgHhIiJjKkLlMmNnOo!@#%&*PpQqRrSsTtUuWwVvXxYyZz1234567890!@#%&*')
+        password.append(x)
+
+    password.reverse()
+    textfield.insert(0, str(password)
+                     .replace(' ', '')
+                     .replace(',', '')
+                     .replace("'", "")
+                     .replace("]", "")
+                     .replace("[", ""))
+
+
+root = tkinter.Tk()
+root.title("Password Generator")
+
+
+textfield = tkinter.Entry(root, width=32, justify='center', font=('Calibri', 24))
+textfield.pack()
+button_6 = tkinter.Button(root, text='6 symbols', font=('Calibri', 15), command=password_lenght_6)
+button_6.pack(side='left')
+button_8 = tkinter.Button(root, text='8 symbols', font=('Calibri', 15), command=password_lenght_8)
+button_8.pack(side='left')
+button_12 = tkinter.Button(root, text='12 symbols', font=('Calibri', 15), command=password_lenght_12)
+button_12.pack(side='left')
+button_18 = tkinter.Button(root, text='18 symbols', font=('Calibri', 15), command=password_lenght_18)
+button_18.pack(side='left')
+button_24 = tkinter.Button(root, text='24 symbols', font=('Calibri', 15), command=password_lenght_24)
+button_24.pack(side='left')
+
+root.mainloop()
